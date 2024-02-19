@@ -1,5 +1,14 @@
+import Header from "./components/Header/Header";
+import MainSlider from "./components/Slider/Slider";
 function App() {
-  return <h1 className="text-center font-semibold">Hello world</h1>;
+  return (
+    <main className="min-h-screen flex items-center justify-center">
+      <div className="main-container w-[375px] h-[850px]">
+        {/* <Header /> */}
+        <MainSlider />
+      </div>
+    </main>
+  );
 }
 
 export default App;
