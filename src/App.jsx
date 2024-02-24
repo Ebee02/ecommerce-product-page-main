@@ -21,8 +21,8 @@ const App = () => {
   };
   return (
     <main className="min-h-screen flex items-center justify-center">
-      <div className="main-container w-[375px] h-[800px] shadow-md my-6">
-        <Header />
+      <div className="main-container w-[375px] h-[810px] shadow-lg my-6">
+        <Header count={counter} />
         <MainSlider />
         <div className="px-6">
           <h3 className="text-main-orange text-base my-5 font-bold tracking-wider">
