@@ -1,4 +1,4 @@
-import user_pic from "../../../public/images/user_pic.jpg";
+import user_pic from "../../../public/images/image-avatar.png";
 
 const Header = () => {
   return (
@@ -7,6 +7,7 @@ const Header = () => {
         <svg
           width={20}
           height={20}
+          className="cursor-pointer"
           fill="grey"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
@@ -21,6 +22,7 @@ const Header = () => {
           width={20}
           height={20}
           fill="grey"
+          className="cursor-pointer"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
         >
@@ -29,7 +31,7 @@ const Header = () => {
 
         <img
           src={user_pic}
-          className="w-7 h-7 border-none rounded-full"
+          className="w-7 h-7 border-none cursor-pointer"
           alt=""
           srcSet=""
         />
