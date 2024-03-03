@@ -20,7 +20,7 @@ const Header = (props) => {
       <div className="flex items-center justify-center gap-x-5">
         <div>
           <div className="h-3 w-6 rounded-full shadow-sm bg-main-orange text-white flex items-center justify-center text-sm">
-            {props.count}
+            {props.cartItem}
           </div>
           <svg
             width={20}

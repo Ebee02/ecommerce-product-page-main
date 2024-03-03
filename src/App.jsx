@@ -8,6 +8,8 @@ import { useState } from "react";
 const App = () => {
   const [counter, setCounter] = useState(0);
 
+  const [cartItem, setCardItem] = useState(0);
+
   const incrementCounter = () => {
     setCounter(counter + 1);
   };
@@ -16,13 +18,13 @@ const App = () => {
     setCounter(counter - 1);
   };
 
-  const onHandleSubmit = () => {
-    console.log("button clicked...");
+  const addToCart = () => {
+    setCardItem((prevState) => prevState + counter);
   };
   return (
     <main className="min-h-screen flex items-center justify-center">
       <div className="main-container w-[375px] h-[810px] shadow-lg my-6">
-        <Header count={counter} />
+        <Header cartItem={cartItem} />
         <MainSlider />
         <div className="px-6">
           <h3 className="text-main-orange text-base my-5 font-bold tracking-wider">
@@ -55,7 +57,7 @@ const App = () => {
               onHandleDecrementCounter={decrementCounter}
             />
           </div>
-          <Button onHandleCart={onHandleSubmit} />
+          <Button onHandleCart={addToCart} />
         </div>
       </div>
     </main>
