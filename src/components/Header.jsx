@@ -3,7 +3,7 @@ const Header = (props) => {
     console.log("button clicked...");
   };
   return (
-    <nav className="antialiased flex text-slate-800 items-center justify-between px-4 py-5 shadow-sm">
+    <nav className="antialiased flex text-slate-800 items-center justify-between px-4 py-5 ">
       <div className="flex items-center justify-center gap-x-5">
         <svg
           onClick={onHandleMenu}
